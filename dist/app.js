@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+const port = process.env.PORT ? parseInt(process.env.PORT) : 1001;
 app.use(bodyParser.text({ type: '*/*' }));
 app.use(express.static('public'));
 app.get('/api/legado', require('./api/legado'));
